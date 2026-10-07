@@ -11,8 +11,6 @@ mongoose.connect(keys.mongoURI)
 
 const app = express()
 
-app.set('trust proxy', 1)
-
 app.use(session({
     secret: keys.sessionKey,
     resave: false,
